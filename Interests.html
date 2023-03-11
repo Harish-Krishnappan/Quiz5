@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Some Interests</title>
+    <link rel="stylesheet" href="homepage.css">
+    <style>
+      #flexbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+  color: blueviolet;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 45px;
+  }
+  #flexbox img {
+        height: 70px;
+        width: 200px;
+        margin-right: 20px;
+      }
+      #flexbox a {
+        margin-right: 20px;
+      }
+  p{
+    color: blue;
+    font-size: large;
+    font-weight: 500px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+    </style>
+    <script>
+          function darkMode() {
+            document.body.style.backgroundColor = "gray";
+            }
+     </script>
+  </head>
+  <body>
+    <nav>
+      <select onchange="window.location.href=this.value;">
+        <option value="">Main Page</option>
+        <option value="./index.html">Go to About Me Page</option>
+        <option value="https://www.linkedin.com/in/harish-krishnappan-024ba9200/">Go to my linkden</option>
+      </select>   
+      <select onchange="window.location.href=this.value;">
+        <option value="">Recruiter Feedback</option>
+        <option value="./second.html">Contact Me</option>
+        <option value="https://www.youtube.com/channel/UCR0V4_GYcX85ezKPFcDV-xA">Go to my youtube channel</option>
+      </select>
+      <select onchange="window.location.href=this.value;">
+        <option value="">Interests</option>
+        <option value="./Interests.html">Go to my Interests</option>
+        <option value="https://www.pokemon.com">Go to my favorite pokemon webpage</option>
+      </select> 
+    </nav>
+  <br><br><br>
+  <button id = "t" onClick = "darkMode()">Dark Mode</button>
+    <div id="border">
+      <h1>Interests</h1>
+      <p>Some of my Interests are Pokemon, Coding, and the Lakers</p>
+    </div>
+    <div id="flexbox" style="display: flex; flex-direction: row;">
+      <img src="download.jpeg" alt="pokemon" style="height: 70px; width: 200px;">
+      <img src="images.jpeg" alt="coding" style="height: 70px; width: 200px;">
+      <img src="images (1).jpeg" alt="Lakers" style="height: 70px; width: 200px;">
+    </div>
+    <div id="flexbox" style="display: flex; flex-direction: row; background-color: rgb(148, 148, 196);">
+      <a href="https://www.pokemon.com/us">My Favorite Pokemon</a>
+      <a href="https://www.javascript.com/">Coding Website</a>
+      <a href="https://www.nba.com/lakers/schedule">Lakers Tickets</a>
+    </div>
+  </body>
+</html>

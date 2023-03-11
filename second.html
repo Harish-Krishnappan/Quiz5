@@ -1,0 +1,69 @@
+  <!--#include virtual="common.html"-->
+<html>
+<head>
+  <link rel="stylesheet" href="homePage.css">
+<title>Form Page</title>
+<script>
+  function darkMode() {
+document.body.style.backgroundColor = "gray";
+}
+  </script>
+</head>
+<body>
+  <nav>
+    <select onchange="window.location.href=this.value;">
+      <option value="">Main Page</option>
+      <option value="./index.html">Go to About Me Page</option>
+      <option value="https://www.linkedin.com/in/harish-krishnappan-024ba9200/">Go to my linkden</option>
+    </select>   
+    <select onchange="window.location.href=this.value;">
+      <option value="">Recruiter Feedback</option>
+      <option value="./second.html">Contact Me</option>
+      <option value="https://www.youtube.com/channel/UCR0V4_GYcX85ezKPFcDV-xA">Go to my youtube channel</option>
+    </select>
+    <select onchange="window.location.href=this.value;">
+      <option value="">Interests</option>
+      <option value="./Interests.html">Go to my Interests</option>
+      <option value="https://www.pokemon.com">Go to my favorite pokemon webpage</option>
+    </select> 
+  </nav>
+<br><br><br>
+  <!--#include virtual="common.html"-->
+  <button id = "t" onClick = "darkMode()">Dark Mode</button>
+  <div id = "flexbox">
+  <div id = "title">
+  <h1>Recruiter Feedbacks</h1>
+  </div>
+  <p2>Please fill out this form to tell me information about yourself.</p2> <br> <br>
+  <div class = "text">
+  <label for= "name">First name:</label>
+  <input type="text" id= "name" name="name" placeholder="first name"><br><br>
+  <label for= "name">Last name:</label>
+  <input type="text" id= "name" name="name"placeholder="last name" ><br><br>
+  <label for= "email">Email:</label>
+  <input type="text" id= "email" name="email" placeholder="email"><br><br>
+  <div id = "cool">
+    <p>The bottom information is asking for questions about your company<p>
+  <label for= "company">What Company Do you Work for?:</label> <br><br>
+  <input type="checkbox" id="google" name="google" value="google">
+  <label for="google"> Google</label><br>
+  <input type="checkbox" id="amazon" name="amazon" value="amazon">
+  <label for="amazon"> Amazon</label><br>
+<input type="checkbox" id="meta" name="meta" value="meta">
+<label for="meta"> Meta</label><br><br>
+<label for = "file">Upload Resume</label><br>
+<input type="file"><br><br>
+<label for = "InterviewDate">Choose Date/Time of Interview</label><br>
+<input type="datetime-local"> <br><br>
+</div>
+<label for = "favColor">Choose Favorite Color</label><br>
+<input type="color" id = "color"> <br><br>
+<input type="reset">
+<input type="submit">
+</div>
+<div id = "flexbox">
+
+
+
+</body>
+</html>
