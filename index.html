@@ -1,0 +1,135 @@
+<html>
+<head>
+  <title>Harish</title>
+  <link rel="stylesheet" href="homePage.css">
+  <style> 
+    nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+}
+
+nav a:hover {
+  color: red;
+}
+
+nav select {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+nav select:focus {
+  outline: none;
+}
+
+nav option {
+  background-color: black;
+}
+
+nav option:hover {
+  background-color: red;
+}
+    h1 {
+      color: blueviolet;
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 45px;
+      background-color: aqua;
+    }
+    a {
+      color: green;
+    }
+    #b {
+      background-color: gainsboro;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-weight: 400;
+    }
+    #e {
+      background-color: black;
+    }
+    #t {
+      background-color: #555;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      float:right;
+    }
+
+    #t:hover {
+      background-color: #333;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function darkMode() {
+  document.body.style.backgroundColor = "gray";
+}
+    </script>
+</head>
+<body>
+  <nav>
+    <select onchange="window.location.href=this.value;">
+      <option value="">Main Page</option>
+      <option value="./index.html">Go to About Me Page</option>
+      <option value="https://www.linkedin.com/in/harish-krishnappan-024ba9200/">Go to my linkden</option>
+    </select>   
+    <select onchange="window.location.href=this.value;">
+      <option value="">Recruiter Feedback</option>
+      <option value="./second.html">Contact Me</option>
+      <option value="https://www.youtube.com/channel/UCR0V4_GYcX85ezKPFcDV-xA">Go to my youtube channel</option>
+    </select>
+    <select onchange="window.location.href=this.value;">
+      <option value="">Interests</option>
+      <option value="./Interests.html">Go to my Interests</option>
+      <option value="https://www.pokemon.com">Go to my favorite pokemon webpage</option>
+    </select> 
+  </nav>
+<br><br><br>
+<button id = "t" onClick = "darkMode()">Dark Mode</button>
+  <div class = "flex_container">
+<table>
+<tr>
+<td><h1>About Harish</h1></td>
+<td>  <img src="image.jpg" alt="Pic of me with my fish  tank" width="400" height="200" style = "border-radius: 70px;">
+</td>
+</tr>
+<tr>
+<td>
+  <div id = "p">
+  <p1>Hi I'm Harish Krishnappan, and I'm a junior studying computer science. Here is a picture of me with my fish tank. Some of my hobbies and my activities are listed here with the hyperlink's to my favorite web pages.</p1>
+  </div>
+</td>
+<td>
+  <div id = "b">
+  <ul>
+    <li><a href="https://code.org/">Coding</a></li>
+    <li><a href="https://www.espn.com/nba/standings">Basketball</a></li>
+    <li><a href="https://www.marvel.com/">Watching Marvel Movies</a></li>
+  </ul>
+  </div>
+  </td>
+</tr>
+<tr>
+  <td>
+    <div id = "e">
+    <a href="second.html">Here is another web page with more info about me</a>
+    </div>
+    </td>
+  </tr>
+  </table>
+</div>
+</body>
+</html>
